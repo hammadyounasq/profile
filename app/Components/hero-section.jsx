@@ -61,7 +61,7 @@
 //     </div>
 //   );
 // }
-
+//----------
 "use client";
 
 import Image from "next/image";
@@ -71,14 +71,15 @@ import { useEffect } from "react";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center px-6 sm:px-10 lg:px-16 bg-gray-100 md:pt-20 pt-28">
-      <div className="max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+    // max-w-[1200px]
+    <section className="relative w-full h-screen flex items-center justify-center px-6 sm:px-10 lg:px-16 bg-white md:pt-20 pt-28">
+      <div className=" max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         {/* Left Content */}
         <div className="text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Building Scalable & Interactive Web Experiences.
           </h1>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-700 mt-3">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold text-gray-700 mt-3">
             Frontend Engineer | React & Next.js Specialist
           </h2>
           <p className="text-gray-600 max-w-xl mt-4 mx-auto lg:mx-0">
@@ -103,8 +104,8 @@ export default function HeroSection() {
               <Link
                 key={index}
                 href={social.href}
-                className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center 
-                           text-gray-700 hover:text-white hover:bg-gray-800 hover:border-gray-800 
+                className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center
+                           text-gray-700 hover:text-white hover:bg-gray-800 hover:border-gray-800
                            hover:scale-110 transition-all duration-300 ease-out"
               >
                 {social.icon}
@@ -130,3 +131,90 @@ export default function HeroSection() {
     </section>
   );
 }
+// "use client";
+
+// import Image from "next/image";
+// import Link from "next/link";
+// import { Linkedin, Github, Mail } from "lucide-react";
+
+// export default function HeroSection() {
+//   return (
+//     <section className="relative w-full min-h-screen flex items-center justify-center px-6 sm:px-10 lg:px-16 bg-white md:pt-20 pt-28">
+//       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+//         {/* Left Content */}
+//         <div className="text-center lg:text-left">
+//           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-black leading-[1.1] tracking-tight">
+//             Building
+//             <br />
+//             Scalable &<br />
+//             Interactive
+//             <br />
+//             <span
+//               className="inline-block font-black text-transparent"
+//               style={{ WebkitTextStroke: "2px black" }}
+//             >
+//               Web
+//               <br />
+//               Experiences
+//             </span>
+//             <span className="text-black">.</span>
+//           </h1>
+
+//           <div className="h-8"></div>
+
+//           <h2 className="text-2xl sm:text-3xl font-bold text-black mt-6 leading-tight">
+//             Frontend Engineer | React &<br className="hidden sm:block" />{" "}
+//             Next.js Specialist
+//           </h2>
+
+//           <div className="h-8"></div>
+
+//           <p className="text-gray-600 text-base sm:text-lg max-w-xl mt-4 mx-auto lg:mx-0 leading-relaxed">
+//             I design and develop high-performance web applications with a strong
+//             focus on modern frontend technologies like{" "}
+//             <strong>React, Next.js, and Tailwind CSS.</strong> Passionate about
+//             crafting seamless user experiences and working with dynamic teams.
+//           </p>
+
+//           <p className="text-gray-600 text-base sm:text-lg max-w-xl mt-4 mx-auto lg:mx-0 leading-relaxed">
+//             Always eager to collaborate, solve complex problems, and push the
+//             boundaries of web development.
+//           </p>
+
+//           {/* Social Links */}
+//           <div className="flex justify-center lg:justify-start space-x-4 pt-8">
+//             {[
+//               { icon: <Linkedin className="w-5 h-5" />, href: "#", delay: 100 },
+//               { icon: <Github className="w-5 h-5" />, href: "#", delay: 200 },
+//               { icon: <Mail className="w-5 h-5" />, href: "#", delay: 300 },
+//             ].map((social, index) => (
+//               <Link
+//                 key={index}
+//                 href={social.href}
+//                 className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center
+//                            text-gray-700 hover:text-white hover:bg-gray-800 hover:border-gray-800
+//                            hover:scale-110 transition-all duration-300 ease-out"
+//               >
+//                 {social.icon}
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Right Content - Image */}
+//         <div className="relative flex justify-center items-center">
+//           <div className="relative">
+//             <Image
+//               src="/hero.jpg"
+//               width={400}
+//               height={500}
+//               alt="Rehan - Web Developer"
+//               className="object-cover w-[200px] sm:w-[250px] md:w-[350px] lg:w-[400px] h-auto"
+//               priority
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
