@@ -38,7 +38,7 @@ import AboutMe from "./Components/about-me";
 import ContactSection from "./Components/contact-section";
 import EducationSection from "./Components/education";
 import Experience from "./Components/experience";
-
+import F from "./Components/f";
 import HeroSection from "./Components/hero-section";
 import Navbar from "./Components/navbar";
 import PortfolioSection from "./Components/portfolio-section";
@@ -64,6 +64,7 @@ export default function Home() {
       <div id="contact">
         <ContactSection />
       </div>
+      <F />
     </>
   );
 }

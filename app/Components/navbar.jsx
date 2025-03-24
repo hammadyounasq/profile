@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -50,22 +50,14 @@ export default function Navbar() {
         isSticky ? "sticky shadow-lg" : "fixed"
       } top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="pr-4">
-              <Image
-                src="/logo.png"
-                className="object-cover"
-                width={20}
-                height={20}
-              />
-            </div>
             <Link
               href="/"
-              className="text-black font-bold text-xl hover:text-gray-600 transition-colors duration-300"
+              className="text-black font-bold text-xl hover:text-[#1a237e] transition-colors duration-300"
             >
-              Personal
+              Hammad 👨🏻‍💻
             </Link>
           </div>
           <div className="hidden md:block">
@@ -139,7 +131,7 @@ export default function Navbar() {
               className="bg-[#1a237e] text-white block w-full text-center p-2 w-[30vw] rounded-lg text-base font-medium hover:bg-gray-800 transition-all duration-300 hover:scale-105 transform mt-6"
               download
             >
-              Resume
+              Hammad
             </a>
           </div>
         </div>
